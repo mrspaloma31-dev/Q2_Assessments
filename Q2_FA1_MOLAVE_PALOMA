@@ -1,0 +1,51 @@
+def add_numbers(num1, num2):
+    """Return the sum of num1 and num2."""
+    return num1 + num2
+
+
+def subtract_numbers(num1, num2):
+    """Return the difference of num1 and num2."""
+    return num1 - num2
+
+
+def multiply_numbers(num1, num2):
+    """Return the product of num1 and num2."""
+    return num1 * num2
+
+
+def divide_numbers(num1, num2):
+    """Return the quotient of num1 and num2, or a message if num2 is 0."""
+    if num2 == 0:
+        return "Cannot divide by zero."
+    return num1 / num2
+
+
+def main():
+    # Input
+    first = float(input("Enter first number: "))
+    second = float(input("Enter second number: "))
+
+    print("\nChoose operation:")
+    print("1 - Addition")
+    print("2 - Subtraction")
+    print("3 - Multiplication")
+    print("4 - Division")
+    choice = input("\nEnter choice: ")
+
+    # Process: call the correct function and store the returned value
+    if choice == "1":
+        result = add_numbers(first, second)
+    elif choice == "2":
+        result = subtract_numbers(first, second)
+    elif choice == "3":
+        result = multiply_numbers(first, second)
+    elif choice == "4":
+        result = divide_numbers(first, second)
+    else:
+        result = "Invalid choice. Please enter 1, 2, 3, or 4."
+
+    # Output
+    print("\nResult:", result)
+
+
+main()

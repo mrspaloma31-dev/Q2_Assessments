@@ -49,3 +49,10 @@ def main():
 
 
 main()
+
+
+1.) I created add_numbers, subtract_numbers, multiply_numbers, divide_numbers, and main.
+2.) Each operation function uses num1 and num2.
+3.) The arguments were first and second, the two numbers the user typed in.
+4.) The returned value is stored in result and then displayed with print.
+5.) Separate functions make the code easier to read, test, fix, and reuse. A bug in division, for example, only needs fixing in one place, and each function can be reused in other programs.
